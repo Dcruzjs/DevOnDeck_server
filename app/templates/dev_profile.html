@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- DevIcons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="../../static/css/normalize.css">
+  <!-- local styles -->
+  <link rel="stylesheet" href="../../static/css/styles.css">
+
+  <title>Developer Dashboard</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar mb-3 navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand d-flex " href="#">
+        <img class="me-2" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30"
+          height="24" class="d-inline-block align-text-top">
+        <figcaption class="pt-1">
+          DevOnDeck
+        </figcaption>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../company/company_dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+  <div class="container">
+    <div class="row">
+      <!-- PROFILE INFO -->
+      <section class="col-12 col-md-6 offset-md-3 border">
+        <h4>Developer Profile</h4>
+        <div class="card mt-5 border">
+          <div class="card-header position-relative border">
+            <!-- NAME -->
+            <span class="col-10 offset-3 col-md-10 offset-md-2"> Daniel Cruz</span>
+          </div>
+          <!-- IMAGE -->
+          <div class="card-body">
+            <figure class="position-absolute top-0 start-10 translate-middle-y">
+              <img class="profile_pic" src="../../static/img/profilepic.webp" alt="Profile Picture">
+            </figure>
+            <!-- LOCATION -->
+            <div class="row mb-3">
+              <div class="col">
+                <h6>Location</h6>
+                <span class="skills"><i class="fas me-1 fa-map-marker-alt"></i>Location</span>
+              </div>
+            </div>
+            <!-- SKILLS -->
+            <h6 class="h6">Skills</h6>
+            <div class="row mb-3 skills">
+              <div class="col d-flex text-center text-center flex-column bg-light text-dark"><i
+                  class="devicon-html5-plain"></i><span>HTML5</span></div>
+
+              <div class="col d-flex text-center flex-column bg-light text-dark"><i
+                  class="devicon-css3-plain"></i><span>CSS3</span> </div>
+
+              <div class="col d-flex text-center flex-column bg-light text-dark"><i
+                  class="devicon-javascript-plain"></i><span>JavaScript</span> </div>
+
+              <div class="col d-flex text-center flex-column bg-light text-dark"><i
+                  class="devicon-python-plain"></i><span>Python</span> </div>
+            </div>
+
+            <div class="row ">
+              <h6>Description</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure debitis esse vitae alias iste quaerat
+                sequi
+                laborum! Alias libero aperiam, tenetur praesentium officiis sunt, perspiciatis modi voluptas provident
+                fuga
+                magnam.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /PROFILE INFO -->
+    
+    </div>
+  </div>
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/bcd8151c88.js" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

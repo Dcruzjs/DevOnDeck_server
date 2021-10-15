@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/css/normalize.css">
+  <link rel="stylesheet" href="../../static/css/styles.css">
+  <title>Edit Profile</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand d-flex " href="#">
+        <img class="me-2" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30"
+          height="24" class="d-inline-block align-text-top">
+        <figcaption class="pt-1">
+          DevOnDeck
+        </figcaption>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./developer_dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <form id="signup_form" class=" col-12 col-md-6 offset-md-3 my-2   p-5 border " action="/register" method="POST">
+        <h2>Edit your Developer's Account</h2>
+        <div class="inputText  d-grid mb-3 gap-3">
+          <div class="form-group">
+            <label class="text" for="first_name">First Name</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" value="first_name"
+              placeholder="Your first name here..." required>
+          </div>
+          <div class="form-group">
+            <label class="text" for="last_name">Last Name</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" value="last_name"
+              placeholder="Your last name here..." required>
+          </div>
+          <div class="form-group">
+            <label class="text" for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="Geek@2021" required>
+          </div>
+          <div class="form-group">
+            <label class="text" for="confirm_password">Password Confirmation</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" value="Geek@2021"
+              required>
+          </div>
+          <div class="form-group ">
+            <label class="text" for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" value="example@example.com"
+              placeholder="name@example.com" required>
+          </div>
+        </div>
+        <div class="dataList  mb-3">
+          <label for="location" >Location</label>
+          <input class="form-control" name="location" list="datalistOptions" id="location" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        
+        <div class="positionRadios  d-flex flex-column mb-3 flex-wrap">
+          <p class="mb-1">Position</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="Student" value="Student" name="position">
+            <label class="form-check-label" for="Student">Student</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="junior" value="Junior Developer" name="position">
+            <label class="form-check-label" for="junior">Junior Developer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="middle" value="Middle Developer" name="position">
+            <label class="form-check-label" for="middle">Middle Developer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="senior" value="Senior Developer" name="position">
+            <label class="form-check-label" for="senior">Senior Developer</label>
+          </div>
+        </div>
+        <div class="genreRadios ">
+          <p class="mb-1">Genre</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" id="male" type="radio" name="genre" value="Male" >
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genre" id="female" value="Female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+        <div class="textArea  mb-3 form-group">
+          <label class="d-block" for="description">Description</label>
+          <textarea class="col-12" name="description" id="description" name="description" cols="12" rows="5"></textarea>
+
+        </div>
+          <a href="./edit_skills.html" class="btn btn-success col-12 col-md-6 offset-md-3  mt-1">></a>
+          <button type="submit" class="btn btn-success col-12 col-md-6 offset-md-3  mt-1">Next</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/bcd8151c88.js" crossorigin="anonymous"></script>
+  <script src="../../static/js/validateSignUpDev.js"></script>
+</body>
+
+</html>

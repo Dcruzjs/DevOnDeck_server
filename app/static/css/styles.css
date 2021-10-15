@@ -1,0 +1,49 @@
+:root {
+  --bg-color: hsl(180, 52%, 96%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--bg-color);
+}
+.hidden {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  color: green;
+}
+i {
+  font-size: 1.8rem;
+}
+.position_list {
+  list-style: none;
+}
+.profile_pic {
+  width: 4rem;
+  border-radius: 100%;
+}
+.skills * {
+  font-size: 0.9rem;
+}
+.page_link {
+  text-decoration: none;
+  color: inherit;
+}
+.page_link i {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+/* i.validation {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+} */
+
+p.errorMsg,
+i.validation {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
